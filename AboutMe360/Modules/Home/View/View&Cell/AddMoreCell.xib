@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nunito-Bold.ttf">
+            <string>Nunito-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AddMoreCell" id="KGk-i7-Jjw" customClass="AddMoreCell" customModule="aboutME360" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VyW-9J-08J">
+                        <rect key="frame" x="20" y="10" width="280" height="60"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eWD-SV-iXG">
+                                <rect key="frame" x="10" y="10" width="40" height="40"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jrP-P8-kPX">
+                                        <rect key="frame" x="10" y="19" width="20" height="2"/>
+                                        <color key="backgroundColor" red="0.01176470588" green="0.1764705882" blue="0.36470588240000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="cAX-6G-BxJ"/>
+                                            <constraint firstAttribute="height" constant="2" id="mKp-90-4MO"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gxc-IA-Gn7">
+                                        <rect key="frame" x="19" y="10" width="2" height="20"/>
+                                        <color key="backgroundColor" red="0.01176470588" green="0.1764705882" blue="0.36470588240000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="cPa-2A-bre"/>
+                                            <constraint firstAttribute="width" constant="2" id="xjt-OR-NEv"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.87058823529999996" green="0.90588235289999997" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="42z-BB-9EM"/>
+                                    <constraint firstItem="gxc-IA-Gn7" firstAttribute="centerY" secondItem="eWD-SV-iXG" secondAttribute="centerY" id="8jb-V6-04w"/>
+                                    <constraint firstItem="jrP-P8-kPX" firstAttribute="centerX" secondItem="eWD-SV-iXG" secondAttribute="centerX" id="Bz8-hB-eQj"/>
+                                    <constraint firstItem="jrP-P8-kPX" firstAttribute="centerY" secondItem="eWD-SV-iXG" secondAttribute="centerY" id="FRM-1A-jxb"/>
+                                    <constraint firstItem="gxc-IA-Gn7" firstAttribute="centerX" secondItem="eWD-SV-iXG" secondAttribute="centerX" id="SNY-kj-mxj"/>
+                                    <constraint firstAttribute="width" constant="40" id="mYG-4i-zuZ"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add More Experience" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="zGp-TM-MtF">
+                                <rect key="frame" x="60" y="5" width="147.5" height="50"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="15"/>
+                                <color key="textColor" red="0.01176470588" green="0.1764705882" blue="0.36470588240000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="2hj-Pd-wa6"/>
+                            <constraint firstItem="eWD-SV-iXG" firstAttribute="leading" secondItem="VyW-9J-08J" secondAttribute="leading" constant="10" id="HBE-4t-jBr"/>
+                            <constraint firstItem="zGp-TM-MtF" firstAttribute="leading" secondItem="eWD-SV-iXG" secondAttribute="trailing" constant="10" id="Uf5-ZQ-bnQ"/>
+                            <constraint firstAttribute="bottom" secondItem="zGp-TM-MtF" secondAttribute="bottom" constant="5" id="Wpz-m6-3Y8"/>
+                            <constraint firstItem="zGp-TM-MtF" firstAttribute="top" secondItem="VyW-9J-08J" secondAttribute="top" constant="5" id="pBd-Av-yhh"/>
+                            <constraint firstItem="eWD-SV-iXG" firstAttribute="centerY" secondItem="VyW-9J-08J" secondAttribute="centerY" id="ry9-Qj-UBO"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="VyW-9J-08J" secondAttribute="trailing" constant="20" id="4Rt-mL-fGZ"/>
+                    <constraint firstAttribute="bottom" secondItem="VyW-9J-08J" secondAttribute="bottom" constant="20" id="5tE-X0-0f6"/>
+                    <constraint firstItem="VyW-9J-08J" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="tiX-F8-YYf"/>
+                    <constraint firstItem="VyW-9J-08J" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="zpn-Sn-8oP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="addView" destination="eWD-SV-iXG" id="znU-zW-HRZ"/>
+                <outlet property="bgView" destination="VyW-9J-08J" id="9oH-qr-sCo"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="81"/>
+        </tableViewCell>
+    </objects>
+</document>

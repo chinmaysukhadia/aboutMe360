@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nunito-SemiBold.ttf">
+            <string>Nunito-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EducationCell" id="KGk-i7-Jjw" customClass="EducationCell" customModule="aboutME360" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xnf-zM-55T">
+                        <rect key="frame" x="20" y="5" width="280" height="60"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ijH-qD-dVt">
+                                <rect key="frame" x="10" y="10" width="40" height="40"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="education" translatesAutoresizingMaskIntoConstraints="NO" id="nDQ-5n-4iD">
+                                        <rect key="frame" x="3" y="3" width="34" height="34"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.87058823529999996" green="0.90588235289999997" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="nDQ-5n-4iD" secondAttribute="trailing" constant="3" id="7XI-cN-w1T"/>
+                                    <constraint firstAttribute="width" constant="40" id="Bcp-YG-PFS"/>
+                                    <constraint firstAttribute="bottom" secondItem="nDQ-5n-4iD" secondAttribute="bottom" constant="3" id="Fsh-mw-E6U"/>
+                                    <constraint firstAttribute="height" constant="40" id="OcM-e6-aTB"/>
+                                    <constraint firstItem="nDQ-5n-4iD" firstAttribute="top" secondItem="ijH-qD-dVt" secondAttribute="top" constant="3" id="hM7-aD-z9U"/>
+                                    <constraint firstItem="nDQ-5n-4iD" firstAttribute="leading" secondItem="ijH-qD-dVt" secondAttribute="leading" constant="3" id="hmj-EA-4SG"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delhi Public School " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="YhL-9p-5BL">
+                                <rect key="frame" x="60" y="5" width="160" height="50"/>
+                                <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="15"/>
+                                <color key="textColor" red="0.01176470588" green="0.1764705882" blue="0.36470588240000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gc6-l5-B6Q">
+                                <rect key="frame" x="230" y="0.0" width="40" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="tFa-sk-i4R"/>
+                                </constraints>
+                                <state key="normal" image="pen_blue"/>
+                                <connections>
+                                    <action selector="editTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="afk-4T-jjD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gc6-l5-B6Q" firstAttribute="top" secondItem="xnf-zM-55T" secondAttribute="top" id="5pH-Lv-C1b"/>
+                            <constraint firstAttribute="bottom" secondItem="gc6-l5-B6Q" secondAttribute="bottom" id="7tR-gZ-1h5"/>
+                            <constraint firstItem="YhL-9p-5BL" firstAttribute="top" secondItem="xnf-zM-55T" secondAttribute="top" constant="5" id="MEG-lp-OXt"/>
+                            <constraint firstItem="ijH-qD-dVt" firstAttribute="leading" secondItem="xnf-zM-55T" secondAttribute="leading" constant="10" id="O5D-u7-BaP"/>
+                            <constraint firstItem="ijH-qD-dVt" firstAttribute="centerY" secondItem="xnf-zM-55T" secondAttribute="centerY" id="PYH-zm-QOA"/>
+                            <constraint firstItem="YhL-9p-5BL" firstAttribute="leading" secondItem="ijH-qD-dVt" secondAttribute="trailing" constant="10" id="Rgo-6Z-wVp"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="c97-Vw-p8g"/>
+                            <constraint firstAttribute="trailing" secondItem="gc6-l5-B6Q" secondAttribute="trailing" constant="10" id="e1w-g3-SzT"/>
+                            <constraint firstAttribute="bottom" secondItem="YhL-9p-5BL" secondAttribute="bottom" constant="5" id="mLX-XI-pi6"/>
+                            <constraint firstItem="gc6-l5-B6Q" firstAttribute="leading" secondItem="YhL-9p-5BL" secondAttribute="trailing" constant="10" id="x0j-19-dfc"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="xnf-zM-55T" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="1Ib-5F-gTb"/>
+                    <constraint firstAttribute="bottom" secondItem="xnf-zM-55T" secondAttribute="bottom" constant="5" id="50q-P0-52Y"/>
+                    <constraint firstItem="xnf-zM-55T" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="QCd-dJ-5mn"/>
+                    <constraint firstAttribute="trailing" secondItem="xnf-zM-55T" secondAttribute="trailing" constant="20" id="l5d-B6-hMw"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bgView" destination="xnf-zM-55T" id="eLa-gw-qQz"/>
+                <outlet property="editButton" destination="gc6-l5-B6Q" id="9K7-mE-xyw"/>
+                <outlet property="iconView" destination="ijH-qD-dVt" id="d9f-rb-vF7"/>
+                <outlet property="titleLabel" destination="YhL-9p-5BL" id="PzY-uP-i0U"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="81"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="education" width="130" height="130"/>
+        <image name="pen_blue" width="20" height="20"/>
+    </resources>
+</document>

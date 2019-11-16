@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nunito-Bold.ttf">
+            <string>Nunito-Bold</string>
+        </array>
+        <array key="Nunito-Regular.ttf">
+            <string>Nunito-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ExperienceCell" id="KGk-i7-Jjw" customClass="ExperienceCell" customModule="aboutME360" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="125"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="125"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TKd-e4-h6W">
+                        <rect key="frame" x="20" y="10" width="280" height="105"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dcC-KS-DB6">
+                                <rect key="frame" x="10" y="8" width="40" height="40"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="job" translatesAutoresizingMaskIntoConstraints="NO" id="vdR-VH-4MH">
+                                        <rect key="frame" x="3" y="3" width="34" height="34"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.87058823529999996" green="0.90588235289999997" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="vdR-VH-4MH" firstAttribute="leading" secondItem="dcC-KS-DB6" secondAttribute="leading" constant="3" id="Ulf-Pc-hFt"/>
+                                    <constraint firstAttribute="bottom" secondItem="vdR-VH-4MH" secondAttribute="bottom" constant="3" id="Zwx-sV-dad"/>
+                                    <constraint firstItem="vdR-VH-4MH" firstAttribute="top" secondItem="dcC-KS-DB6" secondAttribute="top" constant="3" id="ka5-J4-pk2"/>
+                                    <constraint firstAttribute="width" constant="40" id="lcY-lX-ZQF"/>
+                                    <constraint firstAttribute="trailing" secondItem="vdR-VH-4MH" secondAttribute="trailing" constant="3" id="ltV-jY-qZc"/>
+                                    <constraint firstAttribute="height" constant="40" id="rjV-aZ-yRI"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Experience Senior Product Manager" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VM9-Gr-pPx">
+                                <rect key="frame" x="60" y="8" width="160" height="41"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="15"/>
+                                <color key="textColor" red="0.01176470588" green="0.1764705882" blue="0.36470588240000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W9h-lL-IsB">
+                                <rect key="frame" x="230" y="8" width="40" height="30.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30.5" id="XWh-8q-tTF"/>
+                                    <constraint firstAttribute="width" constant="40" id="ptJ-TC-IlB"/>
+                                </constraints>
+                                <state key="normal" image="pen_blue"/>
+                                <connections>
+                                    <action selector="editTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="RGs-kF-vcv"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Terasol Technologies, Delhi FMCG - Product Developemnt" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="znU-Sr-1OD">
+                                <rect key="frame" x="60" y="49" width="160" height="33"/>
+                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="12"/>
+                                <color key="textColor" red="0.01176470588" green="0.1764705882" blue="0.36470588240000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="2014 - Present " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="krV-Ft-ice">
+                                <rect key="frame" x="60" y="82" width="160" height="16.5"/>
+                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="12"/>
+                                <color key="textColor" red="0.49019607840000001" green="0.55294117649999996" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="krV-Ft-ice" firstAttribute="top" secondItem="znU-Sr-1OD" secondAttribute="bottom" id="4io-En-OK7"/>
+                            <constraint firstAttribute="trailing" secondItem="krV-Ft-ice" secondAttribute="trailing" constant="60" id="5AU-LG-kQH"/>
+                            <constraint firstAttribute="trailing" secondItem="W9h-lL-IsB" secondAttribute="trailing" constant="10" id="FBX-vM-fBt"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="JyZ-Ry-GgV"/>
+                            <constraint firstItem="krV-Ft-ice" firstAttribute="leading" secondItem="TKd-e4-h6W" secondAttribute="leading" constant="60" id="LVq-Ze-ewk"/>
+                            <constraint firstItem="VM9-Gr-pPx" firstAttribute="leading" secondItem="dcC-KS-DB6" secondAttribute="trailing" constant="10" id="Ooa-JM-gWx"/>
+                            <constraint firstItem="znU-Sr-1OD" firstAttribute="leading" secondItem="dcC-KS-DB6" secondAttribute="trailing" constant="10" id="Pl8-7P-GtA"/>
+                            <constraint firstAttribute="bottom" secondItem="krV-Ft-ice" secondAttribute="bottom" constant="6" id="Vvl-4T-5bB"/>
+                            <constraint firstItem="znU-Sr-1OD" firstAttribute="leading" secondItem="TKd-e4-h6W" secondAttribute="leading" constant="60" id="Zao-vN-gnA"/>
+                            <constraint firstItem="dcC-KS-DB6" firstAttribute="leading" secondItem="TKd-e4-h6W" secondAttribute="leading" constant="10" id="dyh-Cw-DLp"/>
+                            <constraint firstItem="VM9-Gr-pPx" firstAttribute="top" secondItem="TKd-e4-h6W" secondAttribute="top" constant="8" id="hg1-e2-dR4"/>
+                            <constraint firstItem="znU-Sr-1OD" firstAttribute="top" secondItem="VM9-Gr-pPx" secondAttribute="bottom" id="iJt-Xj-g95"/>
+                            <constraint firstItem="W9h-lL-IsB" firstAttribute="top" secondItem="TKd-e4-h6W" secondAttribute="top" constant="8" id="lCt-yy-aT2"/>
+                            <constraint firstItem="W9h-lL-IsB" firstAttribute="leading" secondItem="VM9-Gr-pPx" secondAttribute="trailing" constant="10" id="mtY-70-IO3"/>
+                            <constraint firstItem="W9h-lL-IsB" firstAttribute="leading" secondItem="znU-Sr-1OD" secondAttribute="trailing" constant="10" id="ubv-9o-T0t"/>
+                            <constraint firstItem="dcC-KS-DB6" firstAttribute="top" secondItem="TKd-e4-h6W" secondAttribute="top" constant="8" id="vjF-35-YIp"/>
+                            <constraint firstAttribute="trailing" secondItem="znU-Sr-1OD" secondAttribute="trailing" constant="60" id="xg8-vn-jte"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="TKd-e4-h6W" secondAttribute="bottom" constant="10" id="49y-x4-tD9"/>
+                    <constraint firstAttribute="trailing" secondItem="TKd-e4-h6W" secondAttribute="trailing" constant="20" id="e6M-FZ-PtF"/>
+                    <constraint firstItem="TKd-e4-h6W" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="gQm-JX-P5A"/>
+                    <constraint firstItem="TKd-e4-h6W" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="iE7-dk-pji"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bgView" destination="TKd-e4-h6W" id="MHh-sK-RPh"/>
+                <outlet property="designationLabel" destination="VM9-Gr-pPx" id="S7U-wR-rkH"/>
+                <outlet property="durationLabel" destination="krV-Ft-ice" id="8ZH-VQ-8yv"/>
+                <outlet property="editButton" destination="W9h-lL-IsB" id="3yb-qO-V2V"/>
+                <outlet property="iconView" destination="dcC-KS-DB6" id="dNF-dz-dZ7"/>
+                <outlet property="orgNameLabel" destination="znU-Sr-1OD" id="Fwr-xF-gQI"/>
+            </connections>
+            <point key="canvasLocation" x="47.826086956521742" y="34.821428571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="job" width="50" height="45"/>
+        <image name="pen_blue" width="20" height="20"/>
+    </resources>
+</document>

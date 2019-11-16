@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nunito-SemiBold.ttf">
+            <string>Nunito-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PopupCell" id="KGk-i7-Jjw" customClass="PopupCell" customModule="aboutME360" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0By-EG-Mzg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="radio_unselected" translatesAutoresizingMaskIntoConstraints="NO" id="Ug4-iR-GKd">
+                                <rect key="frame" x="20" y="15" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="XVe-iR-ZWe"/>
+                                    <constraint firstAttribute="width" constant="20" id="jzW-to-XV1"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2hS-Eh-SPg">
+                                <rect key="frame" x="60" y="10" width="240" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="GEQ-hj-aUl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="18"/>
+                                <color key="textColor" red="0.12941176470588234" green="0.12941176470588234" blue="0.12941176470588234" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="2hS-Eh-SPg" secondAttribute="bottom" constant="10" id="3Bt-A3-ywa"/>
+                            <constraint firstItem="Ug4-iR-GKd" firstAttribute="centerY" secondItem="0By-EG-Mzg" secondAttribute="centerY" id="4Ff-4r-kQ1"/>
+                            <constraint firstAttribute="trailing" secondItem="2hS-Eh-SPg" secondAttribute="trailing" constant="20" id="DWV-Zb-HuD"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="I8A-Tg-s8M"/>
+                            <constraint firstItem="2hS-Eh-SPg" firstAttribute="leading" secondItem="Ug4-iR-GKd" secondAttribute="trailing" constant="20" id="LSm-kG-ZW0"/>
+                            <constraint firstItem="Ug4-iR-GKd" firstAttribute="leading" secondItem="0By-EG-Mzg" secondAttribute="leading" constant="20" id="faf-qw-9d2"/>
+                            <constraint firstItem="2hS-Eh-SPg" firstAttribute="top" secondItem="0By-EG-Mzg" secondAttribute="top" constant="10" id="sfL-3t-kqs"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="0By-EG-Mzg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="9kU-fQ-huu"/>
+                    <constraint firstItem="0By-EG-Mzg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="PNt-xq-jAP"/>
+                    <constraint firstAttribute="bottom" secondItem="0By-EG-Mzg" secondAttribute="bottom" id="itI-KD-4R0"/>
+                    <constraint firstAttribute="trailing" secondItem="0By-EG-Mzg" secondAttribute="trailing" id="pyt-7x-xAC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="radioImageView" destination="Ug4-iR-GKd" id="WRN-Q9-NP1"/>
+                <outlet property="titleLabel" destination="2hS-Eh-SPg" id="c7m-dQ-Uvt"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="124"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="radio_unselected" width="25" height="25"/>
+    </resources>
+</document>

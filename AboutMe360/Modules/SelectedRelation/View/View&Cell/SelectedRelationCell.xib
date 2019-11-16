@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nunito-SemiBold.ttf">
+            <string>Nunito-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SelectedRelationCell" id="KGk-i7-Jjw" customClass="SelectedRelationCell" customModule="aboutME360" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fgz-ED-GZk">
+                        <rect key="frame" x="15" y="7" width="290" height="60"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="SvM-Iu-OJs">
+                                <rect key="frame" x="15" y="5" width="247" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="15"/>
+                                <color key="textColor" red="0.01176470588" green="0.1764705882" blue="0.36470588240000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow_right" translatesAutoresizingMaskIntoConstraints="NO" id="Gr9-DQ-yrU">
+                                <rect key="frame" x="272" y="17.5" width="8" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="8" id="EGY-tv-0Km"/>
+                                    <constraint firstAttribute="height" constant="25" id="bRS-ES-5ey"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Gr9-DQ-yrU" firstAttribute="leading" secondItem="SvM-Iu-OJs" secondAttribute="trailing" constant="10" id="1Xc-eo-3mA"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="5lN-t7-EKe"/>
+                            <constraint firstItem="SvM-Iu-OJs" firstAttribute="top" secondItem="fgz-ED-GZk" secondAttribute="top" constant="5" id="6wK-FN-gUd"/>
+                            <constraint firstAttribute="trailing" secondItem="Gr9-DQ-yrU" secondAttribute="trailing" constant="10" id="8Tt-No-nCZ"/>
+                            <constraint firstAttribute="bottom" secondItem="SvM-Iu-OJs" secondAttribute="bottom" constant="5" id="CMc-J1-aId"/>
+                            <constraint firstAttribute="bottom" secondItem="SvM-Iu-OJs" secondAttribute="bottom" constant="5" id="HZq-Cf-MCC"/>
+                            <constraint firstItem="SvM-Iu-OJs" firstAttribute="top" secondItem="fgz-ED-GZk" secondAttribute="top" constant="5" id="Nen-FL-oB0"/>
+                            <constraint firstItem="Gr9-DQ-yrU" firstAttribute="centerY" secondItem="fgz-ED-GZk" secondAttribute="centerY" id="Ud9-DD-vRl"/>
+                            <constraint firstItem="SvM-Iu-OJs" firstAttribute="leading" secondItem="fgz-ED-GZk" secondAttribute="leading" constant="15" id="l3o-te-r1K"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="fgz-ED-GZk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="0q0-Ne-48j"/>
+                    <constraint firstAttribute="trailing" secondItem="fgz-ED-GZk" secondAttribute="trailing" constant="15" id="Zg9-b6-VSB"/>
+                    <constraint firstItem="fgz-ED-GZk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="f25-KH-EaF"/>
+                    <constraint firstAttribute="bottom" secondItem="fgz-ED-GZk" secondAttribute="bottom" constant="7" id="otX-VL-hzx"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bgView" destination="fgz-ED-GZk" id="6Fc-fl-SFW"/>
+                <outlet property="titleLabel" destination="SvM-Iu-OJs" id="uug-Nn-kUb"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="106"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrow_right" width="15" height="25"/>
+    </resources>
+</document>

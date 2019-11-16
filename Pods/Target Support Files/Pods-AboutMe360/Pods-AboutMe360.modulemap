@@ -1,0 +1,6 @@
+framework module Pods_AboutMe360 {
+  umbrella header "Pods-AboutMe360-umbrella.h"
+
+  export *
+  module * { export * }
+}
